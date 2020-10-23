@@ -17,7 +17,17 @@ class Car:
         if type(color) == str:
             self.__color = color
 
+    def increase_speed(self, speed_up):
+        if type(speed_up) == int and speed_up > 0:
+            self.__speed += speed_up
+            return True
+        return False
+
+    def decrease_in_speed(self, speed_down):
+        if type(speed_down) == int and speed_down > 0:
+            self.__speed -= speed_down
+            return True
+        return False
 
     def __str__(self):
         return f'model - {self.__model}, speed - {self.__speed}, color - {self.__color}'
-

@@ -1,5 +1,11 @@
-print("hjhb")
-print("hjhb")
+import task1.Car as Car
 
-print("hbvjhcbshcs")
-print("hbvjhcbshcs")
+def main():
+    car1 = Car.Car("black", 123, "Lada 2107")
+    print(car1)
+    print(car1.increase_speed(1200))
+    print(car1)
+    print(car1.decrease_in_speed(1200))
+    print(car1)
+
+main()
