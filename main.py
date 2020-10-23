@@ -7,5 +7,8 @@ def main():
     print(car1)
     print(car1.decrease_in_speed(1200))
     print(car1)
+    print(car1.change_color("red"))
+    print(car1.change_color(123))
+    print(car1)
 
 main()
