@@ -28,6 +28,12 @@ class Car:
             self.__speed -= speed_down
             return True
         return False
-
+    
+    def change_color(self, new_color):
+        if type(new_color) == str:
+            self.__color = new_color
+            return True
+        return False
+            
     def __str__(self):
         return f'model - {self.__model}, speed - {self.__speed}, color - {self.__color}'
