@@ -13,5 +13,14 @@ class Ad:
         return f'{self.__title} \n{self.__author} \n{self.__date} \n{self.__counter_view} ' \
             f'\n{self.__description}'
     
-
-
+    def view(self):
+        self.__counter_view += 1
+        print(self)
+    
+    def edit_title(self, new_title):
+        self.__title = new_title
+        self.__date = datetime.datetime.today()
+        
+    def edit_description(self, new_description):
+        self.__description = new_description
+        self.__date = datetime.datetime.today()
