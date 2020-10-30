@@ -11,7 +11,6 @@ class Group:
     def __str__(self):
         return f'{self.__number}'
 
-
     @property
     def students(self):
         return self.__students
@@ -26,7 +25,6 @@ class Group:
             return True
         else:
             return False
-
 
     def remove_student(self, name, last_name):
         for i in self.__students:
@@ -43,7 +41,6 @@ class Group:
         else:
             return False
 
-
     def remove_teacher(self, name, last_name):
         for i in self.__teachers:
             if i.name == name and i.last_name == last_name:
@@ -51,7 +48,6 @@ class Group:
                 return True
 
         return False
-
 
 # s1 = Student("Ivan", "Petrov", 19, 4)
 # s2 = Student("Petr", "Petrov", 19, 4)
@@ -68,8 +64,3 @@ class Group:
 # print(g1.add_teacher(Teacher("Max", "Ivanov", 39, 19)))
 # for i in g1.teachers:
 #     print(i)
-
-
-
-
-
