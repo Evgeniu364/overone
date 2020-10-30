@@ -19,6 +19,3 @@ class Student(Human):
     def average_score(self, other):
         self.__average_score = other
 
-
-s = Student("jhjh", "khbcjhsbvhjbkvj", 12, 3.8)
-print(s)
